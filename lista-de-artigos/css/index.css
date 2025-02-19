@@ -1,0 +1,119 @@
+@import url('./tipografia.css');
+
+/*Global*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+ul,
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li + li {
+  margin-top: 40px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 40px;
+}
+
+/*header*/
+.header {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  justify-content: center;
+}
+
+.header h1 {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-size: 2.25rem;
+  padding-bottom: 40px;
+  width: 30ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Conteudo*/
+.conteudo {
+  display: grid;
+  justify-content: center;
+}
+
+.conteudo img {
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.conteudo-lista {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo-text {
+  text-align: left;
+}
+
+.conteudo-text p {
+  margin-bottom: 20px;
+  width: 45ch;
+}
+
+@media (max-width: 870px) {
+  .header h1 {
+    width: initial;
+  }
+
+  .conteudo-lista {
+    gap: 40px;
+  }
+  .conteudo-text p {
+    width: initial;
+  }
+}
+
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 1.25rem;
+  }
+
+  .conteudo img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .conteudo-text p {
+    margin-bottom: 8px;
+  }
+
+  .small-heading {
+    font-size: 0.75rem;
+  }
+
+  .small-text {
+    font-size: 0.625rem;
+  }
+}

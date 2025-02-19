@@ -1,0 +1,22 @@
+:root {
+  --body-bg: #121826;
+  --span-color: #9DA3AE;
+  --title: #E5E7EB;
+  --text: #D2D5DA;
+  --sessao-bg: #212936;
+  --icon-1: #FCEED8;
+  --icon-2: #DEE9FC;
+  --icon-3: #FBE5E6;
+}
+
+.title {
+  color: var(--title);
+}
+
+.span-color {
+  color: var(--span-color);
+}
+
+.text {
+  color: var(--text);
+}
