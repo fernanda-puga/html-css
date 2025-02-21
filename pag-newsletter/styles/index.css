@@ -1,3 +1,4 @@
+/*geral*/
 body {
   margin: 0;
   padding: 0;
@@ -24,11 +25,11 @@ img {
   padding: 60px;
 }
 
+/*header*/
 .header {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
   gap: 15px;
   margin-bottom: 60px;
 
@@ -50,6 +51,7 @@ img {
   color: #6C727F;
 }
 
+/*conteudo principal*/
 .formulario {
   background-color: #fff;
   max-width: 500px;
@@ -57,6 +59,9 @@ img {
   border-radius: 8px;
   box-shadow: 0px 8px 10px #E5E7EB;
 
+  display: flex;
+  flex-direction: column;
+  
   margin-left: auto;
   margin-right: auto;
 }
@@ -99,6 +104,9 @@ img {
   text-align: center;
   border: none;
   border-radius: 8px;
+  display: inline-block;
+  margin-top: 10px;
+  width: 100%;
 
   font-family: "Poppins" , serif;
   font-size: 1rem;
@@ -116,6 +124,7 @@ img {
   font-weight: 400;
 }
 
+/*responsivo*/
 @media (max-width: 800px) {
   .header {
     margin-bottom: 40px;
@@ -130,8 +139,15 @@ img {
     width: initial;
   }
 
+  .form input[type="email"],
+  .botao {
+    padding: 10px 5px;
+    font-size: 0.75rem;
+  }
+
   .formulario span {
     font-size: 0.625rem;
+    text-align: left;
   }
 }
 
@@ -149,17 +165,23 @@ img {
   }
 
   .formulario {
-    width: 100%;
+    padding: 10px;
   }
 
   .form {
-    margin-bottom: 0;
+    gap: 8px;
+    padding: 8px;
   }
 
   .form input::placeholder,
   .botao {
-    font-size: 0.875rem;
+    font-size: 0.625rem;
   }
+}
+
+.formulario span {
+  margin-top: -20px;
+  margin-left: 10px;
 }
 
 @media (max-width: 400px) {
